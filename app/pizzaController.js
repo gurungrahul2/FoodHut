@@ -7,6 +7,7 @@ app.controller('pizzaController', [
        $scope.addTopping = function (topping){
          $scope.model.toppings.push(topping);
          $scope.showToppingAdded = true;
+         $scope.model.search = null;
        }
        $scope.hideToppingAdded = function(){
          $scope.showToppingAdded = false;
